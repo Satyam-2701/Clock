@@ -84,3 +84,43 @@ transform: translateX(-50%)
 .clock span{
   color: white;
 }
+
+
+@media (max-width:600px){
+  .clock span{
+    font-size: 60px;
+    max-width: 80px;
+
+  }
+}
+
+@media (max-width:480px){
+  .clock span{
+    font-size: 40px;
+    max-width: 60px;
+
+  }
+
+  .container::after{
+    content:  '';
+    width: 150px;
+    height: 150px;
+    background: #f41b75;
+    border-radius:5px;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    z-index: -1;
+  }
+  .container::before{
+    content:  '';
+    width: 150px;
+    height: 150px;
+    background: #419aff;
+    border-radius:500px;
+    position: absolute;
+    right: -30px;
+    bottom: -50px;
+    z-index: -1;
+  }
+}
